@@ -10,6 +10,7 @@ recipeCloseBtn.addEventListener('click', () =>{
     mealDerailsContent.parentElement.classList.remove('showRecipe');
 });
 
+// default meal list function
 function getDefaultMeallist() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian`)
@@ -39,6 +40,7 @@ function getDefaultMeallist() {
         })
 }
 
+// default meal list function call
 getDefaultMeallist()
 
 // get meal list that matches with the ingredients
